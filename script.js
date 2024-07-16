@@ -7,9 +7,13 @@ const msg = document.querySelector("#msg");
 const userScorePara = document.querySelector("#user-score");
 const compScorePara = document.querySelector("#comp-score");
 
+const You = document.querySelector("#you");
+const Comp = document.querySelector("#comp");
+
 const genCompChoice = () => {
   const options = ["rock", "paper", "scissors"];
   const randIdx = Math.floor(Math.random() * 3);
+  Comp.innerText = "Comp : "+ options[randIdx];
   return options[randIdx];
 };
 
@@ -58,6 +62,8 @@ const playGame = (userChoice) => {
 choices.forEach((choice) => {
   choice.addEventListener("click", () => {
     const userChoice = choice.getAttribute("id");
+    console.log(userChoice);
+    You.innerText = "You : "+ userChoice;
     playGame(userChoice);
   });
 });

@@ -5,7 +5,7 @@
   }
   
   h1 {
-    background-color: #081b31;
+    background-color: #4e3957;
     color: #fff;
     height: 5rem;
     line-height: 5rem;
@@ -45,7 +45,7 @@
     justify-content: center;
     align-items: center;
     font-size: 1.50rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     gap: 3rem;
   }
   
@@ -59,7 +59,7 @@
   }
   
   #msg {
-    background-color: #081b31;
+    background-color: #0a396e;
     color: #fff;
     font-size: 1rem;
     display: inline;
